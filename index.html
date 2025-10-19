@@ -1,89 +1,11 @@
 <!doctype html>
-<!--
-  portfolio_index.html
-  Single-file personal portfolio (single-page with anchor navigation)
-  - Author: (substitua pelo seu nome)
-  - Instruções: salve este arquivo como index.html e publique no GitHub Pages
-  Comentários no código explicam decisões importantes (requisito da atividade).
--->
 <html lang="pt-BR">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Portfolio - Seu Nome</title>
+  <title>Portfolio - Jhonatan Carvalho</title>
   <meta name="description" content="Portfólio pessoal - currículo online" />
-
-  <style>
-    /* ===== Reset simples ===== */
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html,body{height:100%}
-    body{font-family:Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;line-height:1.4;color:var(--text);background:var(--bg)}
-
-    /* ===== Variáveis de tema (claro/escuro) ===== */
-    :root{
-      --bg: #f5f5f7;
-      --card: #ffffff;
-      --accent: #0b74de;
-      --muted: #656b75;
-      --text: #111213;
-      --glass: rgba(255,255,255,0.6);
-    }
-    .theme-dark{
-      --bg:#0b0d10;--card:#0f1113;--accent:#4ea3ff;--muted:#9aa3b2;--text:#e6eef8;--glass:rgba(255,255,255,0.03)
-    }
-
-    /* ===== Layout ===== */
-    header{position:fixed;left:0;right:0;top:0;backdrop-filter: blur(6px);background:var(--glass);border-bottom:1px solid rgba(0,0,0,0.06);z-index:120}
-    .container{max-width:1000px;margin:0 auto;padding:0 1rem}
-    .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
-    .brand{display:flex;gap:.75rem;align-items:center}
-    .brand .logo{width:40px;height:40px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#6fd3ff);display:flex;align-items:center;justify-content:center;color:white;font-weight:700}
-    nav ul{display:flex;gap:1rem;list-style:none}
-    nav a{padding:.5rem .6rem;border-radius:6px;text-decoration:none;color:var(--text);font-weight:600}
-    nav a:hover{background:rgba(0,0,0,0.05)}
-
-    /* Mobile menu button */
-    .menu-btn{display:none;background:none;border:0;font-size:1.1rem}
-
-    /* Hero */
-    main{padding-top:84px;padding-bottom:60px}
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:2rem;align-items:center;margin-top:1.25rem}
-    .card{background:var(--card);padding:1.25rem;border-radius:12px;box-shadow:0 6px 18px rgba(11,15,20,0.06)}
-    .avatar{width:120px;height:120px;border-radius:12px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--accent),#6fd3ff);color:white;font-size:2rem}
-
-    /* Sections */
-    section{margin:1.5rem 0}
-    h1,h2{margin-bottom:.6rem}
-    .muted{color:var(--muted);font-size:.95rem}
-
-    /* Portfolio grid */
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
-    .project{padding:1rem;border-radius:8px;background:linear-gradient(180deg,rgba(0,0,0,0.02),transparent);min-height:110px}
-
-    /* Contact form */
-    form .row{display:flex;gap:.6rem}
-    form input, form textarea{width:100%;padding:.6rem;border-radius:8px;border:1px solid rgba(0,0,0,0.08);background:transparent}
-    form label{font-weight:600;font-size:.95rem}
-    .btn{display:inline-block;padding:.6rem .9rem;border-radius:8px;background:var(--accent);color:white;text-decoration:none;border:0;cursor:pointer}
-
-    /* Footer */
-    footer{margin-top:2rem;padding:1rem 0;text-align:center;color:var(--muted)}
-
-    /* Modal (simulação de envio) */
-    .modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,0.45);display:flex;align-items:center;justify-content:center;z-index:999}
-    .modal{background:var(--card);padding:1.25rem;border-radius:10px;min-width:260px;text-align:center}
-
-    /* Responsividade */
-    @media (max-width:900px){
-      .hero{grid-template-columns:1fr;}
-      nav ul{display:none}
-      .menu-btn{display:inline-block}
-      .nav.open nav ul{display:flex;position:absolute;left:8px;right:8px;top:64px;flex-direction:column;background:var(--card);padding:1rem;border-radius:8px;box-shadow:0 10px 30px rgba(0,0,0,0.12)}
-    }
-
-    /* Small polish */
-    .kbd{display:inline-block;padding:.15rem .45rem;border-radius:6px;background:rgba(0,0,0,0.04);font-weight:700}
-  </style>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <header>
@@ -142,8 +64,8 @@
 
             <div style="width:100%;display:flex;gap:.5rem;flex-direction:column">
               <div class="muted"><strong>Local:</strong> Brasil</div>
-              <div class="muted"><strong>Email:</strong> exemplo@dominio.com</div>
-              <div class="muted"><strong>GitHub:</strong> github.com/seuusuario</div>
+              <div class="muted"><strong>Email:</strong> contato@gmail.com</div>
+              <div class="muted"><strong>GitHub:</strong> https://github.com/jonhselbach</div>
             </div>
           </div>
         </aside>
@@ -156,7 +78,7 @@
       <p class="muted">Cursos e formações recentes — liste aqui sua formação mais relevante.</p>
 
       <ul style="margin-top:.6rem;list-style:disc;padding-left:1.2rem">
-        <li><strong>Curso Superior em Análise e Desenvolvimento de Sistemas</strong> — Universidade X (em andamento).</li>
+        <li><strong>Curso Superior em Análise e Desenvolvimento de Sistemas</strong> — Universidade Uninter (em andamento).</li>
         <li><strong>Curso: Java e Spring Boot</strong> — Plataforma Y (2025).</li>
         <li><strong>Inglês:</strong> Intermediário (leitura técnica).</li>
       </ul>
@@ -165,7 +87,7 @@
     <!-- ===== Seção Portfólio ===== -->
     <section id="portfolio" class="card">
       <h2>Portfólio</h2>
-      <p class="muted">Projetos e trabalhos já realizados. Inclua links para repositórios ou demonstrações.</p>
+      <p class="muted">Projetos e trabalhos já realizados.</p>
 
       <div class="grid" style="margin-top:.8rem">
         <article class="project">
@@ -212,7 +134,7 @@
 
           <div style="display:flex;gap:.6rem;align-items:center">
             <button type="submit" class="btn">Enviar mensagem</button>
-            <div style="color:var(--muted);font-size:.9rem">ou envie um e-mail para exemplo@dominio.com</div>
+            <div style="color:var(--muted);font-size:.9rem">ou envie um e-mail para contato@gmail.com</div>
           </div>
         </div>
       </form>
